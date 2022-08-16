@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 14px;
+    background-color:hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    padding: 20% 20%;
+}
+
+
+
+
+img{
+    max-width: 100%;
+}
+
+
+
+h2{
+    text-transform: uppercase;
+     color: hsl(228,12%,48%);
+     font-weight: 500;
+     font-size: 14px;
+     margin-bottom: 0.6rem;
+     letter-spacing: 0.2rem;
+}
+
+p{
+   line-height: 1.5;
+    color: hsl(228,12%,48%);
+
+}
+
+h1{  
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+}
+
+
+
+.container article:first-child img{
+    border-radius: 10px 10px 0 0;
+    margin-bottom: -5px;
+}
+
+.container article:last-child{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0px;
+}
+
+
+.price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: xx-large;
+    margin-right: 1.5rem;
+}
+
+.withoutdicount{
+    color: hsl(228,12%,48%);
+    text-decoration: line-through;
+}
+
+.btn{
+    color: white;
+    background-color:hsl(158, 36%, 37%);
+    border: 1px solid hsl(158, 36%, 37%);
+   font-weight: 700;
+   padding: 0.7rem 2rem;
+   width: 100%;
+   border-radius: 0.5rem;
+   cursor: pointer;
+}
+
+.btn:hover{
+    background-color:hsl(158, 31%, 23%) ;
+}
+
+
+.challenge a{
+    text-decoration: none;
+}
+
+
+@media (min-width:600px) {
+
+    
+
+    .container{
+       padding: 0 100px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    h2{
+       margin-bottom: 1rem;
+    }
+
+
+    h1{
+        font-size: xx-large;
+        margin-bottom: 1rem;
+    }
+
+    .container article:first-child img{
+         border-radius: 10px 0px 0px 10px;
+    }
+
+    .container article:last-child{
+        border-radius: 0px 10px 10px 0px;
+        margin-bottom: 0px;
+        padding: 1.5rem 1.5rem 0.99rem 1.5rem;
+       
+    }
+
+    .challenge{
+        margin-top: 2rem;
+    }
+
+    
+}
